@@ -1,1 +1,38 @@
-/* место для вашего кода */
+
+.header {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 105px;
+	width: 1052px;
+	padding: 92px 43px 92px 50px;
+	align-items: center;
+	justify-content:space-around;
+	gap: 45px;
+}
+
+.header__menu-list {
+	display: flex;
+	flex-direction: row;
+	font-size: 18px;
+	gap: 33px;
+	list-style: circle;
+	white-space: nowrap;
+}
+
+.header__menu-item_active {
+list-style: none;
+}
+
+.header__logo {
+	width: 136px;
+	height: 109px;
+}
+
+.address {
+	font-size: 18px;
+	justify-self: end;
+	align-self: center;
+	font-family: Raleway, sans-serif;
+	padding-right: 0px;
+	padding-bottom: 7px;
+}
