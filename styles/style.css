@@ -4,7 +4,7 @@
 	grid-template-columns: repeat(3, 1fr);
 	height: 105px;
 	width: 1052px;
-	padding: 92px 43px 92px 50px;
+	padding: 92px 40px 201px 50px;
 	align-items: center;
 	justify-content:space-around;
 	gap: 45px;
@@ -25,14 +25,90 @@ list-style: none;
 
 .header__logo {
 	width: 136px;
-	height: 109px;
 }
 
 .address {
 	font-size: 18px;
 	justify-self: end;
 	align-self: center;
-	font-family: Raleway, sans-serif;
-	padding-right: 0px;
-	padding-bottom: 7px;
+	font-style: normal;
+	line-height: 24px;
+}
+
+.cover {
+	display:grid;
+	grid-template-areas: 
+	"overlay__text"
+	"cover__footer";
+	position: relative;
+	height: 757px;
+	width: 1100px;
+	background-image: url(../images/cover.jpg);
+	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: -1;
+	padding-top: 100px;
+	padding-bottom: 50px;
+} 
+
+.cover__title {
+	position: relative;
+  display: flex;
+	flex-direction: column;
+	width: 100%;
+  height: 100%;
+	justify-content: center;
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+	letter-spacing: 30px;
+	z-index: 1;
+	font-size: 100px;
+}
+
+.cover__title-top {
+	position: relative;
+	align-self: start;
+	top: 12px;
+	left: 50px;
+}
+
+.cover__title-mid {
+	position: relative;
+	align-self: center;
+	top: 22px;
+	right: 30px;
+}
+
+.cover__title-bottom {
+	position: relative;
+	align-self: end;
+	top: 24px;
+	right: 50px;
+}
+
+.cover__description {
+	display: flex;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	align-items: end;
+	justify-content: space-around;
+}
+
+
+.cover__description-text {
+	position: relative;
+	font-size: 22px;
+	word-spacing: 19px;
+	color: rgb(255, 255, 255);
+	left: 25px;
+	bottom: 12px;
+}
+
+.bet-button {
+	font-size: 22px;
+ height: 51px;
+ width: 256px;
+
 }
